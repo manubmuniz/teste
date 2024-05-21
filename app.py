@@ -13,8 +13,10 @@ def main():
 
     experience_counts = df['experience_level'].value_counts()
 
+    colors = ['blue', 'green', 'orange']
+
     fig, ax = plt.subplots()
-    experience_counts.plot(kind='bar', ax=ax)
+    experience_counts.plot(kind='bar', ax=ax, color=colors)
     ax.set_xlabel('Nível de Experiência')
     ax.set_ylabel('Contagem')
     ax.set_title('Contagem de Níveis de Experiência')
