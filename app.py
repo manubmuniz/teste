@@ -13,7 +13,7 @@ def main():
 
     experience_counts = df['experience_level'].value_counts()
 
-    colors = ['blue', 'green', 'orange']
+    colors = ['skyblue', 'pink', 'yellow', 'orange']
 
     fig, ax = plt.subplots()
     experience_counts.plot(kind='bar', ax=ax, color=colors)
